@@ -1,0 +1,51 @@
+
+
+.form__input {
+    flex: 1;
+    border: 2px solid #0C4C7B;
+    border-radius: 3px;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    max-width: 49%;
+    margin-bottom: 1rem;
+}
+
+.form__navn-email {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__besked {
+    width: 100%;
+    height: 8rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    border: 2px solid #0C4C7B;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.form__button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form__button {
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: var(--color_primary);
+    padding: 0.6rem 2rem;
+    border: none;
+    border-radius: 3px;
+}
+
+.form__button:hover {
+    cursor: pointer;
+}
+
+.form__error-message {
+    text-align: end;
+    visibility: hidden;
+    font-size: 1.2rem;
+    color: #0C4C7B;
+}

@@ -1,0 +1,12 @@
+:root {
+    --color_primary: rgb(251, 183, 49);
+    --color_text: #707070;
+
+    --margin_small: 0.8rem;
+    --margin_medium: 1.6rem;
+    --margin_large: 3rem;
+
+    --height_small: 3rem;
+    --height_medium: 5rem;
+    --height_large: 150rem;
+}

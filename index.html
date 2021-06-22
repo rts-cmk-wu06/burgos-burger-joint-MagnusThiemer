@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Grundforløbsprøve</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,700;0,800;1,200&display=swap" rel="stylesheet"> 
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="./assets/stylesheets/variables.css">
+    <link rel="stylesheet" href="./assets/stylesheets/typography.css">
+    <link rel="stylesheet" href="./assets/stylesheets/utility.css">
+    <link rel="stylesheet" href="./assets/stylesheets/master-stylesheet.css">
+
+    <!-- common-blocks -->
+    <link rel="stylesheet" href="./assets/common-blocks/wrapper/wrapper.css">
+    <link rel="stylesheet" href="./assets/common-blocks/header/header.css">
+    <link rel="stylesheet" href="./assets/common-blocks/nav/nav.css">
+    <link rel="stylesheet" href="./assets/common-blocks/banner/banner.css">
+    <link rel="stylesheet" href="./assets/common-blocks/gallery/gallery.css">
+    <link rel="stylesheet" href="./assets/common-blocks/recommended/recommended.css">
+
+</head>
+<body>
+    <!-- Wrapper block -->
+    <div class="Wrapper"> 
+
+        <!-- Header block -->
+        <header class="wrapper__header Header"> 
+
+            <!-- Nav block -->
+            <nav class="Nav"> 
+                <ul class="nav__ul flex-row">
+                    <li class="nav__li flex-row nav__logo">
+                        <div class="nav__logo_square"></div>
+                        <img src="./assets/images/burger_ikon.png" alt="yummies burger icon" class="nav__logo_img">
+                        <a href="#" class="nav__a nav__a_first">Burgos</a>
+                    </li>
+                    <div class="nav__navigation flex-row">
+                        <li class="nav__li">
+                            <a href="#" class="nav__a">Home</a>
+                        </li>
+                        <li class="nav__li">
+                            <a href="#galleri" class="nav__a">Galleri</a>
+                        </li>
+                        <li class="nav__li">
+                            <a href="#anbefalede" class="nav__a">Anbefalede</a>
+                        </li>
+                        <li class="nav__li">
+                            <a href="#kontakt" class="nav__a">Kontakt</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+
+            <!-- overlay med position absolute relativt til header (samme højde, offsat fra venstre)-->
+            <div class="header__overlay">
+                <h1 class="header__h1">Vælg din favorit yummy</h1>
+                <a href="#" class="header__button">Start</a>
+            </div>
+            
+        </header>
+
+        <!-- Banner block -->
+        <div class="Banner wrapper__banner">
+            <h3 class="banner__h3">-20%</h3>
+            <h4 class="banner__h4">Sommer-<br>
+                tilbud</h4>
+            <p class="banner__p">Quisque nec libero ut sapien dictum commodo. Nam ac felis id libero rutrum pharetra eu non lacus</p>
+        </div>
+        
+
+        <!-- Gallery block -->
+        <section class="wrapper__gallery Gallery" id="galleri">
+            <h2 class="gallery__h2">Galleri</h2>
+            <div class="gallery__wrapper">
+                <div class="gallery__gallery" id="gallery">
+                    <div class="gallery__selected">
+                        <img src="./assets/images/galleri04.jpg" alt="yummy burger" id="gallerySelected" class="gallery__image">
+                    </div>
+                    <div class="gallery__thumbnail">
+                        <img src="./assets/images/galleri04.jpg" alt="yummy burger" class="gallery__image">
+                    </div>
+                    <div class="gallery__thumbnail">
+                        <img src="./assets/images/galleri05.jpg" alt="yummy burger" class="gallery__image">
+                    </div>
+                    <div class="gallery__thumbnail">
+                        <img src="./assets/images/galleri06.jpg" alt="yummy burger" class="gallery__image">
+                    </div>
+                </div>
+                <aside class="gallery__aside">
+                    <h5 class="gallery__h5">Vores YUMMY opskrift </h5>
+                    <p class="gallery__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p class="gallery__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Recommended block -->
+        <section class="wrapper__recommended Recommended" id="anbefalede">
+            <div class="recommended__wrapper">
+                <h2 class="recommended__h2">Anbefalede yummies</h2>
+                <div class="recommended__gallery">
+
+                    <figure class="recommended__figure">
+                        <p class="recommended__discount">-30%</p>
+                        <img src="./assets/images/favorit01.jpg" alt="yummy favorit burger 1" class="recommended__image">
+                        <figcaption class="recommended__name">Grilled Burger</figcaption>
+                        <figcaption class="recommended__price">65 kr.</figcaption>
+                        <a href="#" class="recommended__favorite-button">
+                            <img src="./assets/images/burger_ikon.png" alt="" class="recommended__favorite-logo">
+                            Favorit</a>
+                    </figure>
+
+                    <figure class="recommended__figure">
+                        <img src="./assets/images/favorit02.jpg" alt="yummy favorit burger 2" class="recommended__image">
+                        <figcaption class="recommended__name">The Firehouse</figcaption>
+                        <figcaption class="recommended__price">70 kr.</figcaption>
+                        <a href="#" class="recommended__favorite-button">
+                            <img src="./assets/images/burger_ikon.png" alt="" class="recommended__favorite-logo">
+                            Favorit</a>
+                    </figure>
+
+                    <figure class="recommended__figure">
+                        <img src="./assets/images/favorit03.jpg" alt="yummy favorit burger 3" class="recommended__image">
+                        <figcaption class="recommended__name">Grilled Burger</figcaption>
+                        <figcaption class="recommended__price">90 kr.</figcaption>
+                        <a href="#" class="recommended__favorite-button">
+                            <img src="./assets/images/burger_ikon.png" alt="" class="recommended__favorite-logo">
+                            Favorit</a>
+                    </figure>
+
+                    <figure class="recommended__figure">
+                        <img src="./assets/images/favorit04.jpg" alt="yummy favorit burger 4" class="recommended__image">
+                        <figcaption class="recommended__name">Super Vegan</figcaption>
+                        <figcaption class="recommended__price">70 kr.</figcaption>
+                        <a href="#" class="recommended__favorite-button">
+                            <img src="./assets/images/burger_ikon.png" alt="" class="recommended__favorite-logo">
+                            Favorit</a>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Form block -->
+        <div class="wrapper__form Form" id="kontakt">
+            <h2 class="form__h5">Kontakt</h2>
+                <form action="post" class="form__form" id="form" onsubmit="return false">
+                    <div class="form__navn-email">
+                        <input type="text" placeholder="Navn" id="form__navn" class="form__input">
+                        <input type="text" placeholder="Email" id="form__email" class="form__input">
+                    </div>
+                    <textarea name="form__besked" id="" cols="70" rows="10" class="form__besked" placeholder="Skriv din besked her"></textarea>
+                    <div class="form__button-container">
+                        <input type="submit" value="Send" onclick="validateForm()" class="form__button">
+                    </div>
+                    <p class="form__error-message" id="formFejlbesked">fejlbesked</p>
+                </form>
+        </div>
+
+        <!-- Footer block -->
+        <footer class="wrapper__footer Footer"> 
+            <div class="footer__container">
+                <img src="./assets/images/footer01.png" alt="footer image of a yummy burger" class="footer__image">
+                <article class="footer__article">
+                    <h6 class="footer__h6">Følg os på Instagram</h6>
+                    <div class="footer__insta-container">
+                        <span class="footer__insta-logo"></span>
+                        <p class="footer__insta">@burgos_yummies</p>
+                    </div>
+                </article>
+            </div>
+            <div class="footer__color-block">
+            </div>
+            <p class="footer__copyright">Yummy © Burgos burgers ApS – All rights reserved Copyrights 2021</p>
+        </footer>
+
+    </div> <!-- wrapper block end -->
+
+    
+    <!-- JAVASCRIPT -->
+    <script src="./assets/common-blocks/form/validateForm.js"></script> <!-- Form block - function validateForm()-->
+    <script src="./assets/common-blocks/gallery/getSelected.js"></script> <!-- Gallery block - function getSelected()-->
+    <script src="./assets/common-blocks/recommended/recommended.js"></script> <!-- Recommended block - data strukturering -->
+</body>
+</html>

@@ -1,0 +1,27 @@
+.Banner {
+    background: url(../../images/reklame01.jpg);
+    background-size: cover;
+    background-position-y: center;
+}
+
+.banner__h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: var(--margin_large);
+    padding-top: var(--margin_medium);
+}
+
+.banner__h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: var(--margin_large);
+    padding-top: var(--margin_small);
+    line-height: 2rem;
+}
+
+.banner__p {
+    width: 50%;
+    color: white;
+    padding-left: var(--margin_large);
+
+}
